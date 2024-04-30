@@ -1,0 +1,26 @@
+{
+  "canisters": {
+    "defunding_backend": {
+      "main": "src/defunding_backend/main.mo",
+      "type": "motoko"
+    },
+    "defunding_frontend": {
+      "dependencies": [
+        "defunding_backend"
+      ],
+      "source": [
+        "src/defunding_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "defunding_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
